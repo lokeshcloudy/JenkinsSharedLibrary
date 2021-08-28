@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call() {
+def call(String imageName) {
     echo 'Pushing The Docker Image'
-    sh 'docker push lokeshlish/jar_application:1.0.0.'
+    sh "docker push ${imageName}"
 }
