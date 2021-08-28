@@ -2,5 +2,5 @@
 
 def call(String imageName) {
     echo 'Building The Image....'
-    sh "docker build -t ${imageName}${BRANCH_NAME} ."
+    sh "docker build -t ${imageName}/${BRANCH_NAME}:${BUILD_ID} ."
 }
